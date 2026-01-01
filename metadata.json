@@ -1,0 +1,7 @@
+{
+  "name": "Globopersona Professional",
+  "description": "Enterprise-grade email marketing and automation platform featuring AI-driven synthesis and high-fidelity performance tracking.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
