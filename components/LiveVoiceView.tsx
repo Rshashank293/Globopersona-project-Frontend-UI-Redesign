@@ -1,7 +1,7 @@
 
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { GoogleGenAI, Modality, LiveServerMessage } from '@google/genai';
-import { LiveTranscription } from '../types';
+import { LiveTranscription } from '../types.ts';
 
 export const LiveVoiceView: React.FC = () => {
   const [isActive, setIsActive] = useState(false);

@@ -5,6 +5,9 @@ export enum ViewType {
   ACCOUNTS = 'ACCOUNTS',
   CAMPAIGNS = 'CAMPAIGNS',
   ANALYTICS = 'ANALYTICS',
+  INTELLIGENCE = 'INTELLIGENCE',
+  CREATIVE = 'CREATIVE',
+  VOICE = 'VOICE',
 }
 
 export interface Stat {
@@ -32,13 +35,11 @@ export interface Campaign {
   type: 'standard' | 'ai_personalized';
 }
 
-// Added GroundingLink interface to support search grounding citations
 export interface GroundingLink {
   uri: string;
   title: string;
 }
 
-// Updated Message interface to include optional fields for metadata, visual input, and grounding results
 export interface Message {
   id: string;
   role: 'user' | 'model';
@@ -48,7 +49,6 @@ export interface Message {
   groundingLinks?: GroundingLink[];
 }
 
-// Added GeneratedImage interface used by the Image Generation workspace
 export interface GeneratedImage {
   id: string;
   url: string;
@@ -56,7 +56,6 @@ export interface GeneratedImage {
   timestamp: Date;
 }
 
-// Added LiveTranscription interface for real-time voice interaction logs
 export interface LiveTranscription {
   id: string;
   text: string;

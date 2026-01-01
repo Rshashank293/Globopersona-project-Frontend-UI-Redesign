@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { GoogleGenAI } from '@google/genai';
-import { GeneratedImage } from '../types';
+import { GeneratedImage } from '../types.ts';
 
 export const ImageGenView: React.FC = () => {
   const [prompt, setPrompt] = useState('');

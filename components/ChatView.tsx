@@ -1,7 +1,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { GoogleGenAI } from '@google/genai';
-import { Message, GroundingLink } from '../types';
+import { Message, GroundingLink } from '../types.ts';
 
 export const ChatView: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([]);
