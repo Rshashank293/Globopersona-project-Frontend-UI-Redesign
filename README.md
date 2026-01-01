@@ -32,5 +32,4 @@ This project transforms the existing Globopersona flow into a premium SaaS exper
 4. Run `npm start` or `npm run dev` to launch the development server.
 5. (Note: Ensure `process.env.API_KEY` is configured for AI features).
 
----
-*Created for Globopersona Assessment - hr@globopersona.com*
+
